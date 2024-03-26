@@ -20,6 +20,6 @@
     --branca: white;
 }
 body {
-    background-color: var(--black);
+    background-color: var(--branca);
     color: var(--branca);
 }

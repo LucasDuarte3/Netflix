@@ -1,0 +1,13 @@
+body {
+    background-color: red;
+}
+/*"media" serve para fazer a transição de tela do PC para o mobile*/
+@media screen and (max-width :820px)/*max-width serve para definir o max para a transição ser feita*/ 
+{
+    .menuPC {
+        display: none;
+    }
+    .menuMobile {
+        display: flex;
+    }
+}

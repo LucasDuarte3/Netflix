@@ -1,0 +1,25 @@
+@font-face {
+    font-family: NetflixSansRegular;
+    src: url(../fonts/NetflixSans-Regular.otf);
+    font-weight: normal;
+}
+@font-face {
+    font-family: NetflixSansBold;
+    src: url(../fonts/NetflixSans-Bold.otf);
+    font-weight: bold;
+}
+* {
+    padding: 0%;
+    margin: 0%;
+}
+:root {
+    --vermelhoClaro: #af0000;
+    --VermelhoEscuro: #831010;
+    --marrom: #564d4d;
+    --black: black;
+    --branca: white;
+}
+body {
+    background-color: var(--black);
+    color: var(--branca);
+}

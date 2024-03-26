@@ -1,0 +1,30 @@
+/*header*/
+header {
+    width: 100%;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    display: flex;
+}
+aside {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+aside img {
+    height: 50px;
+}
+#logo1 {
+    height: 60px;
+}
+nav ul {
+    list-style: none; /*usado para mudar o estilo da lista(Ex: tirar a pontução)*/
+    display: flex;
+    gap: 10px;
+}
+.menuPC {
+    display: flex;
+}
+.menuMobile {
+    display: none;
+}

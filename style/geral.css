@@ -11,15 +11,16 @@
 * {
     padding: 0%;
     margin: 0%;
+    font-family: NetflixSansRegular;
 }
 :root {
     --vermelhoClaro: #af0000;
     --VermelhoEscuro: #831010;
     --marrom: #564d4d;
-    --black: black;
+    --preta: black;
     --branca: white;
 }
 body {
-    background-color: var(--branca);
+    background-color: var(--preta);
     color: var(--branca);
 }

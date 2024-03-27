@@ -40,12 +40,12 @@
 
     <!--Modelo para mobile-->    
         <!--lado direito para mobile-->
-        <aside class="menuMobile">
+        <aside class="abrirMenu">
             <img src="simbolos/Netflix_Symbol_CMYK.png" alt="">
         </aside>
         <!--lado esquerdo para mobile-->
         <aside class="menuMobile">
-            <img src="icons/menu.svg" alt="">
+            <img onclick="abrirMenu()" id="abrirMenu" src="icons/menu.svg" alt="">
         </aside>
 
     </header>
@@ -53,11 +53,41 @@
     <!--página-->
 
     <main>
-        <!--imagens responsivas-->
+        <div id="menuApp">
+            <nav>
+                <ul>
+                    <li><a href="A"></a>Home</li>
+                    <li><a href="A"></a>Series TV</li>
+                    <li><a href="A"></a>Em alta</li>
+                    <li><a href="A"></a>Terror</li>
+                    <li><a href="A"></a>Suspense</li>
+                    <div onclick="fecharMenu()" id="fecharMenu">
+                    <img src="icons/renomear.svg" alt="">
+                    </div>
+                </ul>
+            </nav>
+        </div>
+        <!--imagens responsivas
         <picture>
-            <source media="(min-width: 800px)" srcset="iconesUsuarios/146 - KclrcPw.png">
-            <img src="iconesUsuarios/120 - QLAh0E5.png" alt="">
-        </picture>
+            <source media="(max-width: 800px)" src="images/posters/2aff313ff78d6e3e275033400a3baee36fab253a.png">
+            <img src="images/posters/0a2b5a515b7f141f94e3be4e8f4a4477237ddc2a.png" alt="">
+        </picture>-->
+        <div class="bannerGrupo" id="bannerNarcos">
+            <div class="bannerTexto">
+                <h5>Netflix ORINALS</h5>
+                <h1>NARCOS</h1>
+                <h5>TEMPORADA 3</h5>
+                <P>À medida que o senhor da droga Pablo Escobar sobe na hierarquia, as autoridades colombianas e norte-americanas enfrentam um inimigo que fará tudo para conquistar o poder.</P>
+            <div class="btnBanner">
+                <button type="button">
+                        <img src="icons/play.svg" alt="">Assistir
+                </button>
+                <button type="button">
+                        <img src="icons/add.svg" alt="">Adicionar a lista
+                </button>
+                </div>
+            </div>
+        </div>
     </main>
 
     <!---->
@@ -65,5 +95,14 @@
     <footer>
 
     </footer>
+    <script>
+        function abrirMenu (){
+            menuApp.style.display = "flex"
+        }
+        function fecharMenu (){
+            menuApp.style.display = "none"
+        }
+    </script>
+
 </body>
 </html>

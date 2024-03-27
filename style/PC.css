@@ -6,6 +6,7 @@ header {
     justify-content: space-between;
     display: flex;
 }
+/*menu esquerdo e direito*/
 aside {
     display: flex;
     align-items: center;
@@ -17,14 +18,91 @@ aside img {
 #logo1 {
     height: 60px;
 }
+
+/*listas links*/
 nav ul {
     list-style: none; /*usado para mudar o estilo da lista(Ex: tirar a pontução)*/
     display: flex;
     gap: 10px;
 }
+
+/*menu esquerdo e direito*/
 .menuPC {
     display: flex;
 }
 .menuMobile {
     display: none;
+}
+
+/*banner de fundo*/
+.bannerGrupo {
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat; /*caso o tamanhao não chegue ao final ele nao refete a mensagem*/ 
+    background-size: cover; /*cover informa ao navegador que ele deve se certificar de que a imagem cobrirá sempre o contêiner inteiro*/ 
+    background-position: top; /**/ 
+}
+#bannerNarcos {
+    background-image: url(../images/posters/Narcos.png);
+}
+
+/*texto na imagem*/
+.bannerTexto {
+    width: 30%;
+    height: 100%;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 30%, rgba(0,212,255,0) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 0px 10px;
+}
+.bannerTexto h5 {
+    font-size: 12pt;
+}
+.bannerTexto h1 {
+    font-size: 40pt;
+    margin: 0px 10px;
+}
+.bannerTexto p {
+    font-size: 10pt;
+}
+/*botões*/
+.btnBanner {
+    display: flex;
+    gap: 5px;
+}
+.btnBanner button{
+    background-color: rgb(104, 104, 104);
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border: none;
+    border-radius: 2px;
+}
+.btnBanner button:hover{
+    background-color: rgb(34, 34, 34);
+}
+
+/*menu mobile*/
+#menuApp {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-color: rgba(169, 169, 169, 0.644);
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+#menuApp ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.bannerGrupo {
+    height: auto;
 }
